@@ -24,7 +24,7 @@ export default function ImageDetails(props: PropsType) {
             <div className="image-wraper">
               {props.filteredImage &&
                 props.filteredImage.map((item) => (
-                  <img className="full-image" src={item?.urls?.regular} />
+                  <img key={item.id} className="full-image" src={item?.urls?.regular} />
                 ))}
             </div>
             <div className="list">

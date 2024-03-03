@@ -175,6 +175,7 @@ export default function MainPage() {
         {dataArray &&
           dataArray.map((item) => (
             <img
+              key={item.id}
               className="image"
               onClick={() => handleClick(item.id)}
               src={item?.urls?.small}

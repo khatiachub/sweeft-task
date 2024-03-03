@@ -141,7 +141,7 @@ export default function History() {
       </nav>
       <ul className="list-history">
         {uniqueWord.map((item) => (
-          <li className="list-item" onClick={() => handleClick(item)}>
+          <li key={item} className="list-item" onClick={() => handleClick(item)}>
             {item}
           </li>
         ))}
@@ -152,6 +152,7 @@ export default function History() {
           dataArray.map((item) =>
             (item as Item)?.state.data.results.map((image) => (
               <img
+                key={image.id}
                 className="image"
                 onClick={() => clickImage(image.id)}
                 src={image?.urls?.small}
