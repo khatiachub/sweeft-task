@@ -1,16 +1,15 @@
-import {HashRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter,Route, Routes } from 'react-router-dom'
 import MainPage from './pages/MainPage'
 import History from './pages/History'
 
 function App() {
- 
   return (
-    <HashRouter >
+    <BrowserRouter >
     <Routes>
-      <Route path='/' element={<MainPage/>}/>
-      <Route path='/history' element={<History/>}/>
+      <Route path='/sweeft-task/' element={<MainPage/>}/>
+      <Route path='/sweeft-task/history' element={<History/>}/>
     </Routes>
-    </HashRouter>
+    </BrowserRouter>
   )
 }
 
