@@ -177,10 +177,10 @@ export default function MainPage() {
           onChange={(e) => handleChange(e)}
         />
         <nav className="navigation">
-          <Link className="nav-text" to={"/sweeft-task/"}>
+          <Link className="nav-text" to={"/"}>
             მთავარი
           </Link>
-          <Link className="nav-text" to={"/sweeft-task/history"}>
+          <Link className="nav-text" to={"/history"}>
             ისტორია
           </Link>
         </nav>

@@ -4,10 +4,10 @@ import History from './pages/History'
 
 function App() {
   return (
-    <BrowserRouter >
+    <BrowserRouter basename="/sweeft-task/">
     <Routes>
-      <Route path='/sweeft-task/' element={<MainPage/>}/>
-      <Route path='/sweeft-task/history' element={<History/>}/>
+      <Route path='/' element={<MainPage/>}/>
+      <Route path='/history' element={<History/>}/>
     </Routes>
     </BrowserRouter>
   )
