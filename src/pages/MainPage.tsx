@@ -113,14 +113,14 @@ export default function MainPage() {
       html.scrollHeight,
       html.offsetHeight
     );
-  
+
     if (windowHeight + window.scrollY >= documentHeight) {
       setPageNumber((prevPageNumber) => prevPageNumber + 1);
     }
   };
-  
+
   window.onscroll = handleScroll;
-  
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -146,7 +146,7 @@ export default function MainPage() {
     queryFn: () => fetchData(),
     queryKey: ["data", keyValue, pageNumber],
     staleTime: Infinity,
-    cacheTime:Infinity
+    cacheTime: Infinity,
   });
 
   if (isError) {

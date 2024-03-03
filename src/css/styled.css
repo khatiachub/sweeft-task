@@ -107,6 +107,10 @@
     max-width: 400px;
     width: 100%;
   }
+  .input::placeholder {
+    font-size: 10px;
+    padding-left: 3px;
+  }
 }
 @media screen and (max-width: 768px) {
   .image-container {
