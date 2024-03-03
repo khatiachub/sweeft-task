@@ -132,10 +132,10 @@ export default function History() {
   return (
     <div>
       <nav className="navigation-history">
-        <Link className="nav-text" to={"/"}>
+        <Link className="nav-text" to={"/sweeft-task/"}>
           მთავარი
         </Link>
-        <Link style={{marginLeft: 20}} className="nav-text" to={"/history"}>
+        <Link style={{marginLeft: 20}} className="nav-text" to={"/sweeft-task/history"}>
           ისტორია
         </Link>
       </nav>
