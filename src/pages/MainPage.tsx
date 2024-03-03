@@ -132,6 +132,7 @@ export default function MainPage() {
     queryFn: () => fetchData(),
     queryKey: ["data", keyValue, pageNumber],
     staleTime: Infinity,
+    cacheTime:Infinity
   });
 
   if (isError) {

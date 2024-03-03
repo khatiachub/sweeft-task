@@ -128,7 +128,6 @@ export default function History() {
     setModalWindow(false);
   };
 
-  console.log(filteredMaxWord);
 
   return (
     <div>
